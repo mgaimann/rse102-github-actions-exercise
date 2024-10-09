@@ -1,6 +1,7 @@
 """
 Tests for mathematical operations functions.
 """
+
 from operations import find_max, find_mean
 from unittest import TestCase
 import csv
