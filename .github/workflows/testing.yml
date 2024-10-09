@@ -14,3 +14,16 @@ jobs:
         run: pip install black
       - name: "Run style check"
         run: black --check .
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: "Install dependencies"
+        run: pip install numpy matplotlib
+      - name: "Install coverage"
+        run: pip install pytest coverage
+      - name: "Run coverage"
+        run: coverage run diffusion2d.py
