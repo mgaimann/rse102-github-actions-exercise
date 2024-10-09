@@ -4,15 +4,12 @@ Solving the two-dimensional diffusion equation
 Example acquired from https://scipython.com/book/chapter-7-matplotlib/examples/the-two-dimensional-diffusion-equation/
 """
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 
 
-
 class SolveDiffusion2D:
     def __init__(self):
-
         """
         Constructor of class SolveDiffusion2D
         """
@@ -39,9 +36,6 @@ class SolveDiffusion2D:
 
         # Timestep
         self.dt = None
-
-
-
 
     def initialize_domain(self, w=10.0, h=10.0, dx=0.1, dy=0.1):
         self.w = w
